@@ -8,6 +8,7 @@
 
 #Class to check if its a vowel
 #Re-written with default values
+#could add a check instead and pass a list to the __init__ and then just check if an item is in the list
 class lettercheck:
     def __init__(self,ISVowel = False, ISRoman = False):
         self.ISVowel = ISVowel
@@ -50,7 +51,6 @@ while UInput != "QUIT":
         print ("")
         exit()
     if UInput == "I":
-        print(I.ISVowel,I.ISRoman)
         print ("")
         print ("-------------------------------------------------------")
         print ("Vowel Check Is: " + str(I.ISVowel) + " - For: " + str(UInput))
